@@ -1,0 +1,12 @@
+{
+  "name": "Evernote suppress ctrl+s/cmd+s",
+  "version": "1",
+  "description" : "Prevents opening the browser save dialog when pressing ctrl+s or cmd+s at the Evernote website.",
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "matches": ["https://www.evernote.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
